@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대상혁</title>
+</head>
+<body>
+    <!-- 데이터를 전송하기 위한 태그 -->
+    <!-- 데이터 전송위해 3가지 정보!! -->
+    <!-- 1. 어디로? action -->
+    <!-- 2. 어떤 방식으로? method = get or post-->
+    <!-- 3. 언제? submit -->
+    <form action="/login" method="get">
+
+        <!-- 로그인 하기 위해 -->
+        <!-- login_id, login_pw -->
+
+        ID : <input type="text" name="login_id"> <br/>
+        PW : <input type="password" name="login_pw"> <br/>
+
+        <input type="submit" value="전송">
+    </form>
+
+    <form action="/mbti" method="post">
+        MBTI : <input type="text" name="mbti"> <br/>
+
+        <input type="submit" value="MBTI전송">
+    </form>
+    <form action="/detect" method = "post" enctype="multipart/form-data">
+
+        <input type = "file" name="file">
+
+        <input type = "submit" value="객체 탐지">
+
+    </form>
+    <form action="/compare" method="post" enctype="multipart/form-data">
+        <input type = "file" name="file2">
+        <input type = "file" name="file3">
+        <input type = "submit" value="얼굴비교">        
+
+    </form>
+
+
+</body>
+</html>
+
